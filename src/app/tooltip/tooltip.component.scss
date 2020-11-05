@@ -1,0 +1,29 @@
+.tooltip {
+    position: fixed;
+    z-index: 4;
+    width: 200px;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: .25);
+    cursor: pointer;
+    pointer-events: none;
+    padding: 1rem;
+
+    .state {
+        font-family: 'Bitter', serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    .ev {
+        font-size: .8rem;
+        opacity: .5;
+    }
+
+    small {
+        margin-top: 1rem;
+        line-height: 1;
+        display: block;
+        opacity: .5;
+        font-size: .7rem;
+    }
+}

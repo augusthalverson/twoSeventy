@@ -1,8 +1,8 @@
-import { state } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ProgressService } from '../progress-service/progress.service';
 import { ResetService } from '../reset-service/reset.service';
 import { State } from './state.model';
+import { TooltipService } from '../tooltip-service/tooltip.service';
 
 @Component({
   selector: 'app-map',
@@ -72,7 +72,7 @@ export class MapComponent implements OnInit {
     0
   ];
 
-  constructor(public progressService: ProgressService, public resetService: ResetService) { }
+  constructor(public progressService: ProgressService, public resetService: ResetService, public tooltipService: TooltipService) { }
 
   ngOnInit(): void {
     this.states = this.progressService.STATES;
@@ -85,8 +85,7 @@ export class MapComponent implements OnInit {
       wasReset => {
         this.modes.fill(0);
       }
-    )
-
+    );
   }
 
   public toggle(id: number): void {
@@ -111,4 +110,12 @@ export class MapComponent implements OnInit {
     localStorage.setItem('modes', JSON.stringify(this.modes));
   }
 
+  hover(id: number): void {
+    this.tooltipService.isTooltipActivated = true;
+    this.tooltipService.setCurrentTerritory(id);
+  }
+
+  unHover(): void {
+    this.tooltipService.isTooltipActivated = false;
+  }
 }

@@ -10,6 +10,7 @@ import { RestartComponent } from './restart/restart.component';
 import { ResetConfirmComponent } from './reset-confirm/reset-confirm.component';
 import { ResetWindowComponent } from './reset-window/reset-window.component';
 import { FooterComponent } from './footer/footer.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     RestartComponent,
     ResetConfirmComponent,
     ResetWindowComponent,
-    FooterComponent
+    FooterComponent,
+    TooltipComponent
   ],
   imports: [
     BrowserModule,
