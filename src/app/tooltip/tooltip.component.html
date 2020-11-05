@@ -1,0 +1,4 @@
+<div *ngIf="tooltipService.isTooltipActivated" [ngStyle]="{'left': mouseX + 'px', 'top': mouseY + 'px'}" class="tooltip">
+    <span class="state">{{ currentTerritory.name }}</span>
+    <span class="ev">electoral votes: {{ currentTerritory.electoralVotes }}</span>
+</div>

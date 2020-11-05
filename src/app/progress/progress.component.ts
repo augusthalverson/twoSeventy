@@ -37,7 +37,6 @@ export class ProgressComponent implements OnInit {
         setTimeout(() => {
           this.gopProgress = (gopVotes / 538) * 100;
           this.gopVotes = gopVotes;
-          console.log(this.gopVotes);
           if (this.gopVotes >= 270) {
             this.gopWon = true;
           } else {

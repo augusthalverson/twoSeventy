@@ -9,35 +9,35 @@ export class ProgressService {
 
   STATES: State[] = [
     {
-      name: 'alabama',
+      name: 'Alabama',
       electoralVotes: 9
     },
     {
-      name: 'alaska',
+      name: 'Alaska',
       electoralVotes: 3
     },
     {
-      name: 'arizona',
+      name: 'Arizona',
       electoralVotes: 11
     },
     {
-      name: 'arkansas',
+      name: 'Arkansas',
       electoralVotes: 6
     },
     {
-      name: 'california',
+      name: 'California',
       electoralVotes: 55
     },
     {
-      name: 'colorado',
+      name: 'Colorado',
       electoralVotes: 9
     },
     {
-      name: 'connecticut',
+      name: 'Connecticut',
       electoralVotes: 7
     },
     {
-      name: 'delaware',
+      name: 'Delaware',
       electoralVotes: 3
     },
     {
@@ -45,191 +45,191 @@ export class ProgressService {
       electoralVotes: 3
     },
     {
-      name: 'florida',
+      name: 'Florida',
       electoralVotes: 29
     },
     {
-      name: 'georgia',
+      name: 'Georgia',
       electoralVotes: 16
     },
     {
-      name: 'hawaii',
+      name: 'Hawaii',
       electoralVotes: 4
     },
     {
-      name: 'idaho',
+      name: 'Idaho',
       electoralVotes: 4
     },
     {
-      name: 'illinois',
+      name: 'Illinois',
       electoralVotes: 20
     },
     {
-      name: 'indiana',
+      name: 'Indiana',
       electoralVotes: 11
     },
     {
-      name: 'iowa',
+      name: 'Iowa',
       electoralVotes: 6
     },
     {
-      name: 'kansas',
+      name: 'Kansas',
       electoralVotes: 6
     },
     {
-      name: 'kentucky',
+      name: 'Kentucky',
       electoralVotes: 8
     },
     {
-      name: 'louisiana',
+      name: 'Louisiana',
       electoralVotes: 8
     },
     {
-      name: 'maine',
+      name: 'Maine',
       electoralVotes: 2
     },
     {
-      name: 'maryland',
+      name: 'Maryland',
       electoralVotes: 10
     },
     {
-      name: 'massachusetts',
+      name: 'Massachusetts',
       electoralVotes: 11
     },
     {
-      name: 'michigan',
+      name: 'Michigan',
       electoralVotes: 16
     },
     {
-      name: 'minnesota',
+      name: 'Minnesota',
       electoralVotes: 10
     },
     {
-      name: 'mississippi',
+      name: 'Mississippi',
       electoralVotes: 6
     },
     {
-      name: 'missouri',
+      name: 'Missouri',
       electoralVotes: 10
     },
     {
-      name: 'montana',
+      name: 'Montana',
       electoralVotes: 3
     },
     {
-      name: 'nebraska',
+      name: 'Nebraska',
       electoralVotes: 2
     },
     {
-      name: 'nevada',
+      name: 'Nevada',
       electoralVotes: 6
     },
     {
-      name: 'newHampshire',
+      name: 'New Hampshire',
       electoralVotes: 4
     },
     {
-      name: 'newJersey',
+      name: 'New Jersey',
       electoralVotes: 14
     },
     {
-      name: 'newMexico',
+      name: 'New Mexico',
       electoralVotes: 5
     },
     {
-      name: 'newYork',
+      name: 'New York',
       electoralVotes: 29
     },
     {
-      name: 'northCarolina',
+      name: 'North Carolina',
       electoralVotes: 15
     },
     {
-      name: 'northDakota',
+      name: 'North Dakota',
       electoralVotes: 3
     },
     {
-      name: 'ohio',
+      name: 'Ohio',
       electoralVotes: 18
     },
     {
-      name: 'oklahoma',
+      name: 'Oklahoma',
       electoralVotes: 7
     },
     {
-      name: 'oregon',
+      name: 'Oregon',
       electoralVotes: 7
     },
     {
-      name: 'pennsylvania',
+      name: 'Pennsylvania',
       electoralVotes: 20
     },
     {
-      name: 'rhodeIsland',
+      name: 'RhodeIsland',
       electoralVotes: 4
     },
     {
-      name: 'southCarolina',
+      name: 'South Carolina',
       electoralVotes: 9
     },
     {
-      name: 'southDakota',
+      name: 'South Dakota',
       electoralVotes: 3
     },
     {
-      name: 'tennessee',
+      name: 'Tennessee',
       electoralVotes: 11
     },
     {
-      name: 'texas',
+      name: 'Texas',
       electoralVotes: 38
     },
     {
-      name: 'utah',
+      name: 'Utah',
       electoralVotes: 6
     },
     {
-      name: 'vermont',
+      name: 'Vermont',
       electoralVotes: 3
     },
     {
-      name: 'virginia',
+      name: 'Virginia',
       electoralVotes: 13
     },
     {
-      name: 'washington',
+      name: 'Washington',
       electoralVotes: 12
     },
     {
-      name: 'westVirginia',
+      name: 'West Virginia',
       electoralVotes: 5
     },
     {
-      name: 'wisconsin',
+      name: 'Wisconsin',
       electoralVotes: 10
     },
     {
-      name: 'wyoming',
+      name: 'Wyoming',
       electoralVotes: 3
     },
     {
-      name: 'me-01',
+      name: 'ME-01',
       electoralVotes: 1
     },
     {
-      name: 'me-02',
+      name: 'ME-02',
       electoralVotes: 1
     },
     {
-      name: 'ne-01',
+      name: 'NE-01',
       electoralVotes: 1
     },
     {
-      name: 'ne-02',
+      name: 'NE-02',
       electoralVotes: 1
     },
     {
-      name: 'ne-03',
+      name: 'NE-03',
       electoralVotes: 1
     }
   ];
