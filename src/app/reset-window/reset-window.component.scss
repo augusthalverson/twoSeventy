@@ -16,9 +16,9 @@
     z-index: 4;
     top: 32vh;
     left: 50vw;
+    width: 80vw;
     transform: translateY(-50%);
     transform: translateX(-50%);
-    width: 60vw;
 
     background-color: white;
     padding: 1.2rem 1.5rem;
@@ -67,5 +67,16 @@
                 }
             }
         }
+    }
+}
+
+@media (min-width: 600px) {
+    .window {
+        width: 60vw;
+    }
+}
+@media (min-width: 800px) {
+    .window {
+        width: 400px
     }
 }
