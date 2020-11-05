@@ -2,10 +2,12 @@
 
 svg {
     position: fixed;
+    z-index: -1;
     width: 95vw;
     top: 45%;
     left: 2.5vw;
     transform: translateY(-50%);
+    max-height: 60vw;
     
 
     path, rect {

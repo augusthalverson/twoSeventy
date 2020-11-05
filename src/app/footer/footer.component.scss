@@ -1,0 +1,32 @@
+.footer {
+    position: fixed;
+    width: 95vw;
+    height: 15px;
+    bottom: 18px;
+    left: 2.5vw;
+    display: flex;
+    justify-content: space-around;
+
+    font-family: 'Bitter', serif;
+    color: black;
+
+    a {
+        text-decoration: none;
+        opacity: .25;
+        transition: opacity .5 ease;
+
+        &:visited {
+            color: inherit;
+        }
+
+        img {
+            margin-left: .5rem;
+            height: 20px;
+            transform: translateY(5px);
+        }
+    }
+
+    a:hover {
+        opacity: 1;
+    }
+}

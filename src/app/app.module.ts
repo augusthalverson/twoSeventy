@@ -9,6 +9,7 @@ import { TitlebarComponent } from './titlebar/titlebar.component';
 import { RestartComponent } from './restart/restart.component';
 import { ResetConfirmComponent } from './reset-confirm/reset-confirm.component';
 import { ResetWindowComponent } from './reset-window/reset-window.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ResetWindowComponent } from './reset-window/reset-window.component';
     TitlebarComponent,
     RestartComponent,
     ResetConfirmComponent,
-    ResetWindowComponent
+    ResetWindowComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
