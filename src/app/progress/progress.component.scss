@@ -1,0 +1,122 @@
+@import "../../styles.scss";
+
+.progress {
+    display: flex;
+    align-items: center;
+
+    .candidate {
+        width: 100px;
+        height: 100px;
+        img {
+            width: 100%;
+            border-radius: 50%;
+            filter: grayscale(1);
+        }
+    }
+    .progress-container {
+        flex-grow: 1;
+        position: relative;
+        margin: 0 1rem;
+
+        .key {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: .25rem;
+
+            span {
+                font-family: 'Bitter', serif;
+                font-weight: 600;
+                width: 40%;
+
+                .party {
+                    font-weight: 400;
+                    opacity: .6;
+                }
+
+                &#gop {
+                    text-align: right;
+                }
+            }
+            .middle {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                #label {
+                    font-family: 'Bitter', serif;
+                    opacity: .4;
+                }
+                #marker {
+                    width: 1px;
+                    height: 5px;
+                    background-color: black;
+                    opacity: .4;
+                }
+            }
+            
+        }
+
+        .progress-bar {
+            height: 20px;
+            background-color: #eee;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+    
+            .progress {
+    
+                &#dem-progress {
+                    background-color: $blue;
+                    height: 100%;
+                }
+        
+                &#gop-progress {
+                    background-color: $red;
+                    height: 100%;
+                    align-self: flex-end;
+                }
+            }
+            
+        }
+        .votes {
+            margin-top: .25rem;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Bitter', serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+
+            span {
+                padding: .25rem .75rem;
+                border-radius: 20px;
+                &.won {
+                    color: white;
+                    padding: .25rem .75rem;
+                    border-radius: 20px;
+                    box-sizing: content-box;
+
+                    &#demVotes {
+                        background-color: $blue;
+                    }
+    
+                    &#gopVotes {
+                        background-color: $red;
+                    }
+                }
+
+                img {
+                    height: 1rem;
+                }
+
+                &#demVotes {
+                    transform: translateX(-.75rem);
+                }
+
+                &#gopVotes {
+                    transform: translateX(.75rem);
+                }
+            }
+        }
+    }
+    
+
+}

@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/twoSeventy",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "twoSeventy"
+    }
+  },
+  "defaultProject": "twoSeventy",
+  "cli": {
+    "analytics": "6a4c90e3-4f40-45b1-8b51-c6bcc0c0c405"
+  }
 }

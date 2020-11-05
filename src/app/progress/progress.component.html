@@ -1,0 +1,26 @@
+<div class="progress unselectable">
+    <div class="candidate">
+        <img src="../../assets/biden.jpg" alt="Image of Joseph R. Biden">
+    </div>
+    <div class="progress-container">
+        <div class="key">
+            <span id="dem">Joe Biden <span class="party">(D)</span></span>
+            <div class="middle">
+                <div id="label">269</div>
+                <div id="marker">&nbsp;</div>
+            </div>
+            <span id="gop">Donald Trump <span class="party">(R-Inc.)</span></span>
+        </div>
+        <div class="progress-bar">
+            <div id="dem-progress" class="progress" [ngStyle]="{'width':demProgress + '%'}">&nbsp;</div>
+            <div id="gop-progress" class="progress" [ngStyle]="{'width':gopProgress + '%'}">&nbsp;</div>
+        </div>
+        <div class="votes">
+            <span [ngClass]="{'won': demWon }" id="demVotes">{{ demVotes }} <img *ngIf="demWon" src="../../assets/check.png" alt=""></span>
+            <span [ngClass]="{'won': gopWon }" id="gopVotes"><img *ngIf="gopWon" src="../../assets/check.png" alt=""> {{ gopVotes }}</span>
+        </div>
+    </div>
+    <div class="candidate">
+        <img src="../../assets/trump.jpg" alt="Image of Donald J. Trump">
+    </div>
+</div>
