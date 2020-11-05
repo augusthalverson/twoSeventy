@@ -1,0 +1,50 @@
+@import "../../styles.scss";
+
+svg {
+    width: 100vw;
+    
+
+    path {
+        stroke: white;
+        stroke-width: 1;
+        fill: $neutral;
+        position: absolute;
+        transition: all 200ms ease;
+
+        &.superRed {
+            fill: $red;
+            fill-opacity: 1;
+        }
+        &.red {
+            fill: $red;
+            fill-opacity: .5;
+        }
+        &.neutral {
+            fill: $neutral;
+            fill-opacity: 1;
+        }
+        &.blue {
+            fill: $blue;
+            fill-opacity: .5;
+        }
+        &.superBlue {
+            fill: $blue;
+            fill-opacity: 1;
+        }
+
+        &:hover {
+            stroke:black;
+            stroke-width: 2px;
+            stroke-linecap: round;
+            // fill:red;
+            z-index: 100;
+        }
+    }
+
+    path:hover {
+        stroke: 1px solid black;
+        z-index: 100;
+    }
+}
+
+
