@@ -1,6 +1,7 @@
 import { state } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ProgressService } from '../progress-service/progress.service';
+import { ResetService } from '../reset-service/reset.service';
 import { State } from './state.model';
 
 @Component({
@@ -71,7 +72,7 @@ export class MapComponent implements OnInit {
     0
   ];
 
-  constructor(public progressService: ProgressService) { }
+  constructor(public progressService: ProgressService, public resetService: ResetService) { }
 
   ngOnInit(): void {
     this.states = this.progressService.STATES;
@@ -79,6 +80,12 @@ export class MapComponent implements OnInit {
     if (!!localStorage.getItem('modes')) {
       this.modes = JSON.parse(localStorage.getItem('modes'));
     }
+
+    this.resetService.wasReset.subscribe(
+      wasReset => {
+        this.modes.fill(0);
+      }
+    )
 
   }
 

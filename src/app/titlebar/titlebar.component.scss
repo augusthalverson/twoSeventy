@@ -1,7 +1,6 @@
 @import "../../styles.scss";
 
 .titlebar {
-    background-color: #eeeeee;
     padding: .5rem 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -13,10 +12,17 @@
     top: 1.5rem;
     box-sizing: border-box;
 
+    box-shadow: 5px 5px 20px rgba(0,0,0,.25);
+
     #header {
         font-family: 'Bitter', serif;
         font-size: 2rem;
-        font-weight: 900;
+        font-weight: 500;
+        color: rgba(0,0,0,.6);
+
+        strong {
+            color: rgba(0,0,0,1);
+        }
     }
 
     .subheader {

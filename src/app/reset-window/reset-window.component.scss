@@ -1,0 +1,71 @@
+@import "../../styles.scss";
+
+.whiten {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 3;
+    opacity: .8;
+}
+
+.window {
+    position: fixed;
+    z-index: 4;
+    top: 32vh;
+    left: 50vw;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 60vw;
+
+    background-color: white;
+    padding: 1.2rem 1.5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.25);
+    border-radius: 1rem;
+    font-size: .8rem;
+
+    .header {
+        font-family: 'Bitter', serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+    }
+
+    .subheader {
+        font-family: futura, sans-serif;
+        color: rgba(0,0,40,.5);
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+
+        div {
+            font-family: futura, sans-serif;
+            padding: .25rem;
+            color: rgba(0,0,40,.5);
+
+            cursor: pointer;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &#reset {
+                background-color: $red;
+                color: white;
+                padding: .25rem 1rem;
+                border-radius: .5rem;
+                text-decoration: none;
+
+                &:active {
+                    background-color: $superRed;
+                }
+            }
+        }
+    }
+}

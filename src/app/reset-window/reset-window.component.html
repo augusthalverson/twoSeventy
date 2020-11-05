@@ -1,0 +1,9 @@
+<div *ngIf="resetService.resetConfirmWindow" class="whiten unselectable"></div>
+<div *ngIf="resetService.resetConfirmWindow" class="window unselectable">
+    <div class="header">Do you really want to reset the map?</div>
+    <div class="subheader">Your progress will be lost!</div>
+    <div class="buttons">
+        <div (click)="cancel()" id="cancel">No, continue filling out my map.</div>
+        <div (click)="reset()" id="reset">Yes, delete my map.</div>
+    </div>
+</div>
