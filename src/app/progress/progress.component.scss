@@ -1,6 +1,12 @@
 @import "../../styles.scss";
 
 .progress {
+    position: fixed;
+    bottom: 0;
+    left: 2.5vw;
+    width: 95vw;
+    height: 200px;
+
     display: flex;
     align-items: center;
 
@@ -61,18 +67,22 @@
             position: relative;
             display: flex;
             justify-content: space-between;
+            border-radius: 5px;
     
             .progress {
+                position: relative;
     
                 &#dem-progress {
                     background-color: $blue;
                     height: 100%;
+                    border-radius: 5px 0 0 5px;
                 }
         
                 &#gop-progress {
                     background-color: $red;
                     height: 100%;
                     align-self: flex-end;
+                    border-radius: 0 5px 5px 0;
                 }
             }
             

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { State } from '../map/state.model';
 import { ProgressService } from '../progress-service/progress.service';
 
 @Component({
