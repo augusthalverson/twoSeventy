@@ -8,7 +8,7 @@ import { State } from '../map/state.model';
 })
 export class TooltipService {
 
-  isTooltipActivated = true;
+  isTooltipActivated = false;
   private currentTerritory = 0;
 
   getCurrentTerritory = new BehaviorSubject<number>(this.currentTerritory);

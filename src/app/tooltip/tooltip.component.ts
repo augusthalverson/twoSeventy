@@ -21,7 +21,7 @@ export class TooltipComponent implements OnInit {
     } else {
       this.mouseX = e.pageX + 15;
     }
-    
+
     this.mouseY = e.pageY + 20;
   }
 
