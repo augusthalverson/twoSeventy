@@ -1,0 +1,31 @@
+@import "../../styles.scss";
+
+.titlebar {
+    background-color: #eeeeee;
+    padding: .5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .5rem;
+    position: fixed;
+    width: 95vw;
+    left: 2.5vw;
+    top: 1.5rem;
+    box-sizing: border-box;
+
+    #header {
+        font-family: 'Bitter', serif;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .subheader {
+        font-family: futura, sans-serif;
+        opacity: .5;
+        width: 30%;
+
+        &:last-of-type {
+            text-align: right;
+        }
+    }
+}

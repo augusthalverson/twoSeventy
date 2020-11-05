@@ -7,7 +7,7 @@ import { State } from '../map/state.model';
 })
 export class ProgressService {
 
-  states: State[] = [
+  STATES: State[] = [
     {
       name: 'alabama',
       electoralVotes: 9
@@ -86,7 +86,7 @@ export class ProgressService {
     },
     {
       name: 'maine',
-      electoralVotes: 4
+      electoralVotes: 2
     },
     {
       name: 'maryland',
@@ -118,7 +118,7 @@ export class ProgressService {
     },
     {
       name: 'nebraska',
-      electoralVotes: 5
+      electoralVotes: 2
     },
     {
       name: 'nevada',
@@ -211,6 +211,26 @@ export class ProgressService {
     {
       name: 'wyoming',
       electoralVotes: 3
+    },
+    {
+      name: 'me-01',
+      electoralVotes: 1
+    },
+    {
+      name: 'me-02',
+      electoralVotes: 1
+    },
+    {
+      name: 'ne-01',
+      electoralVotes: 1
+    },
+    {
+      name: 'ne-02',
+      electoralVotes: 1
+    },
+    {
+      name: 'ne-03',
+      electoralVotes: 1
     }
   ];
 
@@ -228,11 +248,11 @@ export class ProgressService {
 
       let demVotesFromStorage = 0;
       let gopVotesFromStorage = 0;
-      for (let i = 0; i < this.states.length; i++) {
+      for (let i = 0; i < this.STATES.length; i++) {
         if (modes[i] === 1 || modes[i] === 2) {
-          demVotesFromStorage += this.states[i].electoralVotes;
+          demVotesFromStorage += this.STATES[i].electoralVotes;
         } else if (modes[i] === -2 || modes[i] === -1) {
-          gopVotesFromStorage += this.states[i].electoralVotes;
+          gopVotesFromStorage += this.STATES[i].electoralVotes;
         }
       }
 

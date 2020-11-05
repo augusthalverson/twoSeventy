@@ -25,7 +25,7 @@ export class ProgressComponent implements OnInit {
         this.demProgress = (demVotes / 538 ) * 100;
         this.demVotes = demVotes;
         if (this.demVotes >= 270) {
-          this.demWon = true
+          this.demWon = true;
         } else {
           this.demWon = false;
         }

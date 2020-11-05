@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { ProgressComponent } from './progress/progress.component';
+import { TitlebarComponent } from './titlebar/titlebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    ProgressComponent
+    ProgressComponent,
+    TitlebarComponent
   ],
   imports: [
     BrowserModule,
