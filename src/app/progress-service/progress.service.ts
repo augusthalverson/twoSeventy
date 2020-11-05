@@ -86,7 +86,9 @@ export class ProgressService {
     },
     {
       name: 'Maine',
-      electoralVotes: 2
+      electoralVotes: 2,
+      split: true,
+      totalEV: 4
     },
     {
       name: 'Maryland',
@@ -118,7 +120,9 @@ export class ProgressService {
     },
     {
       name: 'Nebraska',
-      electoralVotes: 2
+      electoralVotes: 2,
+      split: true,
+      totalEV: 5
     },
     {
       name: 'Nevada',
@@ -165,7 +169,7 @@ export class ProgressService {
       electoralVotes: 20
     },
     {
-      name: 'RhodeIsland',
+      name: 'Rhode Island',
       electoralVotes: 4
     },
     {

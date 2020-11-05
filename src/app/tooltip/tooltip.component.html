@@ -1,4 +1,6 @@
 <div *ngIf="tooltipService.isTooltipActivated" [ngStyle]="{'left': mouseX + 'px', 'top': mouseY + 'px'}" class="tooltip">
-    <span class="state">{{ currentTerritory.name }}</span>
-    <span class="ev">electoral votes: {{ currentTerritory.electoralVotes }}</span>
+    <div class="state">{{ currentTerritory.name }}<span *ngIf="currentTerritory.split">*</span></div>
+    <div *ngIf="!currentTerritory.split" class="ev">electoral votes: {{ currentTerritory.electoralVotes }}</div>
+    <div *ngIf="currentTerritory.split" class="ev">electoral votes: {{ currentTerritory.totalEV }}</div>
+    <small *ngIf="currentTerritory.split">*This state splits its electoral votes between the winner of the state's overall popular vote, and the winner of the states congressional districts.</small>
 </div>

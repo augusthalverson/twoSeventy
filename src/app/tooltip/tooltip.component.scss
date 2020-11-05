@@ -8,10 +8,6 @@
     pointer-events: none;
     padding: 1rem;
 
-    span {
-        display: block;
-    }
-
     .state {
         font-family: 'Bitter', serif;
         font-weight: 900;
@@ -21,5 +17,13 @@
     .ev {
         font-size: .8rem;
         opacity: .5;
+    }
+
+    small {
+        margin-top: 1rem;
+        line-height: 1;
+        display: block;
+        opacity: .5;
+        font-size: .7rem;
     }
 }
